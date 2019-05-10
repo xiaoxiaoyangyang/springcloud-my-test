@@ -1,0 +1,14 @@
+#spring:
+#  cloud:
+#    config:
+#      name: microservicecloud-config-eureka-client
+#      profile: test
+#      uri: http://localhost:3344
+#      label: master
+spring:
+  cloud:
+    config:
+      uri:  http://localhost:3344
+      profile: eurekaclient
+  config:
+    name: springcloud-config-server

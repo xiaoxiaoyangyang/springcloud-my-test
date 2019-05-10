@@ -1,0 +1,23 @@
+server:
+  port: 3344
+spring:
+  application:
+    name: springcloud-config-server
+
+  profiles:
+    active: native
+  cloud:
+    config:
+      uri: http://localhost:3344
+#      server:
+#        native:
+#          search-locations: classpath:/conf
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/
+    register-with-eureka: true
+  instance:
+    instance-id: microservice-config-server-3344
+    prefer-ip-address: true
+
